@@ -226,3 +226,5 @@ report round-trip.
   Keep it disabled unless the engagement explicitly covers it.
 * The dashboard's React app is loaded from CDNs to stay dependency-light. For
   air-gapped use, vendor the UMD bundles into `oasip/web/static/`.
+
+<!-- last-verified: 2026-09-20 02:58 UTC -->
