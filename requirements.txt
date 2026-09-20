@@ -1,0 +1,17 @@
+# OASIP core dependencies (Python 3.11+)
+httpx>=0.27
+dnspython>=2.6
+SQLAlchemy>=2.0.30
+fastapi>=0.111
+uvicorn>=0.30
+jinja2>=3.1
+cryptography>=42
+pydantic>=2.7
+
+# --- Optional (pip install extras) ---------------------------------------
+# PostgreSQL storage (instead of the default zero-setup SQLite file):
+#   psycopg2-binary>=2.9
+# Distributed task queue (instead of the built-in asyncio pipeline):
+#   celery[redis]>=5.3
+# Git-history secret scanning (Module 3):
+#   trufflehog>=3.0

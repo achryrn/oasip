@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oasip"
+version = "0.1.0"
+description = "OSINT & Attack Surface Intelligence Platform - passive external attack-surface mapping"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "httpx>=0.27",
+  "dnspython>=2.6",
+  "SQLAlchemy>=2.0.30",
+  "fastapi>=0.111",
+  "uvicorn>=0.30",
+  "jinja2>=3.1",
+  "cryptography>=42",
+  "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg2-binary>=2.9"]
+queue = ["celery[redis]>=5.3"]
+trufflehog = ["trufflehog>=3.0"]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+oasip = "oasip.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["oasip*"]
+
+[tool.setuptools.package-data]
+oasip = ["web/static/*", "web/static/**/*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+.env
+oasip.db
+oasip.db-*
+data/
+reports/
+.pytest_cache/
+node_modules/
+
+# unrelated work that lives in this workspace folder
+mcbot-work/
+mcbot-ws.py
+HACKER_INTEL_REPORT.md
+MALWARE_ANALYSIS_REPORT.md
+PENTEST_REPORT.md
+SECURITY_PATCHES.md

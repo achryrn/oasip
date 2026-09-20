@@ -1,0 +1,28 @@
+:root{--ink:#1a2332;--mut:#5b6b83;--bg:#f4f6fa;--card:#fff;--line:#dfe5ef;
+--accent:#3a6ea5;--crit:#b3261e;--high:#e37400;--med:#8a6d00;--low:#377e3f}
+*{box-sizing:border-box}
+body{font:14px/1.5 -apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:24px}
+header{display:flex;align-items:center;gap:16px;border-bottom:2px solid var(--line);padding-bottom:12px;margin-bottom:16px}
+header h1{font-size:20px;margin:0}
+.badge{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11px;font-weight:700;color:#fff;text-transform:uppercase}
+.b-critical{background:var(--crit)}.b-high{background:var(--high)}.b-medium{background:var(--med)}
+.b-low{background:var(--low)}.b-info{background:var(--accent)}.b-plaintext{background:var(--crit)}
+.b-hashed{background:var(--high)}.b-none{background:var(--low)}.b-unknown{background:#7c8798}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:20px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+.kpi .v{font-size:28px;font-weight:800}.kpi .l{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px}
+.card h2{margin:0 0 10px;font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:600;background:#eef1f7}
+code{background:#eef1f7;padding:1px 5px;border-radius:4px;font-size:12px}
+select,input,button{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+button{cursor:pointer;background:var(--accent);color:#fff;border:none}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.muted{color:var(--mut)}
+.score{font-weight:800}
+.tab{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
+.tab button{background:#eef1f7;color:var(--ink)}
+.tab button.on{background:var(--accent);color:#fff}
