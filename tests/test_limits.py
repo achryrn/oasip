@@ -29,3 +29,4 @@ async def test_rate_limiter_burst_then_throttle():
     elapsed = time.monotonic() - start
     # 2 burst + 6 more at 10/s -> roughly 0.6s+
     assert elapsed >= 0.5
+
